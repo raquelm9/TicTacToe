@@ -1,0 +1,40 @@
+.container-fluid {
+ background-color: white;
+}
+
+.jumbotron{
+    text-align: center;
+    background: none;
+}
+
+.sectionLight{
+    background-color:#eceeef;
+    padding:2rem;
+}
+
+.table_game {
+    border-spacing: 0;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+td{
+    border: 1px solid black;
+}
+
+.table td, .table th {
+    padding: 0;
+}
+
+.btn_click{
+    display: block;
+    height: 100px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color:transparent;
+    font-size: 60px;
+}
+
