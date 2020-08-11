@@ -10,6 +10,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,16 +34,16 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Videos</a>
+          <a class="nav-link" href="#">History</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Photos</a>
+          <a class="nav-link" href="#">Videos</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <!-- Section 1 -->
+  <!-- Section One -->
   <div class="sectionLight">
     <div class="row">
       <div class="col-sm-12">
@@ -50,61 +55,201 @@
         </div>
       </div>
     </div>
+
     <div class="row">
-      <div class="col">
-      </div>
+      <div class="col"></div>
       <div class="col-md-6 col-sm-12">
-        <table class="table_game table table-lg" width="100%">
-          <tbody>
-            <tr>
-              <td><button type="button" class="btn_click" id="btn_0" onClick="play('btn_0', 0, 0)"></button></td>
-              <td><button type="button" class="btn_click" id="btn_1" onClick="play('btn_1', 0, 1)"></button></td>
-              <td><button type="button" class="btn_click" id="btn_2" onClick="play('btn_2', 0, 2)"></button></td>
-            </tr>
-
-            <tr>
-              <td><button type="button" class="btn_click" id="btn_3" onClick="play('btn_3', 1, 0)"></button></td>
-              <td><button type="button" class="btn_click" id="btn_4" onClick="play('btn_4', 1, 1)"></button></td>
-              <td><button type="button" class="btn_click" id="btn_5" onClick="play('btn_5', 1, 2)"></button></td>
-            </tr>
-            
-            <tr>
-              <td><button type="button" class="btn_click" id="btn_6" onClick="play('btn_6', 2, 0)"></button></td>
-              <td><button type="button" class="btn_click" id="btn_7" onClick="play('btn_7', 2, 1)"></button></td>
-              <td><button type="button" class="btn_click" id="btn_8" onClick="play('btn_8', 2, 2)"></button></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="container" style="width:100%">
+            <div class="row">
+                <button type="button" class="btn_click col-4" id="btn_0" onClick="play('btn_0', 0, 0)"></button>
+                <button type="button" class="btn_click col-4" id="btn_1" onClick="play('btn_1', 0, 1)"></button>
+                <button type="button" class="btn_click col-4" id="btn_2" onClick="play('btn_2', 0, 2)"></button>
+            </div>
+            <div class="row">
+                <button type="button" class="btn_click col-4" id="btn_3" onClick="play('btn_3', 1, 0)"></button>
+                <button type="button" class="btn_click col-4" id="btn_4" onClick="play('btn_4', 1, 1)"></button>
+                <button type="button" class="btn_click col-4" id="btn_5" onClick="play('btn_5', 1, 2)"></button>
+            </div>
+            <div class="row">
+                <button type="button" class="btn_click col-4" id="btn_6" onClick="play('btn_6', 2, 0)"></button>
+                <button type="button" class="btn_click col-4" id="btn_7" onClick="play('btn_7', 2, 1)"></button>
+                <button type="button" class="btn_click col-4" id="btn_8" onClick="play('btn_8', 2, 2)"></button>
+            </div>
+        </div>
       </div>
-      <div class="col">
-      </div>
-      <!-- <div class="col"></div> -->
-      <!-- <div class"col-sm-12 col-md-12" style = "background-color: red;">
-        <table class="table_game table table-lg" width=100%'>
-          <tbody>
-            <tr>
-              <th><button type="button" class="btn_click" id="btn_0" onClick="play('btn_0', 0, 0)"></button></th>
-              <th><button type="button" class="btn_click" id="btn_1" onClick="play('btn_1', 0, 1)"></button></th>
-              <th><button type="button" class="btn_click" id="btn_2" onClick="play('btn_2', 0, 2)"></button></th>
-            </tr>
-
-            <tr>
-              <th><button type="button" class="btn_click" id="btn_3" onClick="play('btn_3', 1, 0)"></button></th>
-              <th><button type="button" class="btn_click" id="btn_4" onClick="play('btn_4', 1, 1)"></button></th>
-              <th><button type="button" class="btn_click" id="btn_5" onClick="play('btn_5', 1, 2)"></button></th>
-            </tr>
-            
-            <tr>
-              <th><button type="button" class="btn_click" id="btn_6" onClick="play('btn_6', 2, 0)"></button></th>
-              <th><button type="button" class="btn_click" id="btn_7" onClick="play('btn_7', 2, 1)"></button></th>
-              <th><button type="button" class="btn_click" id="btn_8" onClick="play('btn_8', 2, 2)"></button></th>
-            </tr>
-          </tbody>
-        </table>
-      </div> -->
-      <!-- <div class="col"></div> -->
+      <div class="col"></div>
     </div>
   </div>
+
+  <!-- Section Two -->
+  <div class="sectionDark">
+    <div class="row">
+      <div class="col-sm-12 col-md-2 offset-md-1">
+        <img class="img-fluid" src="assets/img-control.png">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>History</h1>
+            <p>Experts believe the name tic-tac-toe came about sometime in the 1800s. That's when a popular game called either "ticktack" or "tic-tac-toe" was played by blindly throwing a pencil at a slate marked with numbers. Your score was tallied by counting the numbers hit with the pencil. </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <p>The modern game we know as tic-tac-toe is played on a nine-square grid created by drawing lines to create three horizontal rows and three vertical columns. With X going first, players alternate marking the squares with Xs and Os, trying to achieve three marks in a row either horizontally, vertically, or diagonally.</p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <button type="button" class="btn btn-lg btn-instruction" data-toggle="modal" data-target="#instructionModal">Instructions</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+
+    <!-- Section Three -->
+    <div class="sectionLight">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-12 col-lg-4">
+              <img class="img-fluid imgCenter" src="assets/img-party.jpg">
+              <div class="row">
+                <div class="col-sm-12">
+                  <button type="button" class="btn btn-primary btn-lg btnCenter" data-toggle="modal" data-target=".party-modal-lg">Party Game</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <img class="img-fluid imgCenter" src="assets/img-sport.jpg">
+              <div class="row">
+                <div class="col-sm-12">
+                  <button type="button" class="btn btn-primary btn-lg btnCenter" data-toggle="modal" data-target=".sport-modal-lg">Sport Game</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <img class="img-fluid imgCenter" src="assets/img-win.png">
+              <div class="row">
+                <div class="col-sm-12">
+                  <button type="button" class="btn btn-primary btn-lg btnCenter" data-toggle="modal" data-target=".winner-modal-lg">Always Win!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-inverse">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 socialWrapper">
+            <p class="footer-content">Tic Tac Toe</p>
+          </div>
+          <div class="col-sm-6 col-lg-9 socialWrapper">
+            <a href="https://facebook.com" target="blank">
+              <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://google.com" target="blank">
+              <i class="fa fa-google fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com" target="blank">
+              <i class="fa fa-instagram fa-2x" aria-hidden="true""></i>
+            </a>
+          </div> 
+        </div>
+    </footer>
+
+
+
+  <!-- Modal -->
+  <!-- Instructions Modal -->
+    <div class="modal fade" id="instructionModal" tabindex="-1" role="dialog" aria-labelledby="instructionLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contentTitle">Instructions Tic Tac Toe Game</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <p>1. The game is played on a grid that's 3 squares by 3 squares.<br><br>
+                    2. You are X, your friend is O. Players take turns putting their marks in empty squares.<br><br>
+                    3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.<br><br>
+                    4. When all 9 squares are full, the game is over.<br><br></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <img class="img-fluid TicTacToe" src="assets/img-TTT.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Party Modal -->
+    <div class="modal fade party-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9UGQhz3vPg" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Sport Modal -->
+    <div class="modal fade sport-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IRDp5HcZyVA" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Always win -->
+    <div class="modal fade winner-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OmC07DvEayY" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Reset game modal-->
+    <div class="modal fade" id="resetGameModal" tabindex="-1" role="dialog" aria-labelledby="Winner" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Game Over</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button onclick="restartGame()" type="button" class="btn btn-primary">Restart game</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 

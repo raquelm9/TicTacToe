@@ -1,10 +1,11 @@
 .container-fluid {
- background-color: white;
+    background-color: white;
 }
 
 .jumbotron{
     text-align: center;
     background: none;
+    margin:0;
 }
 
 .sectionLight{
@@ -12,29 +13,88 @@
     padding:2rem;
 }
 
-.table_game {
-    border-spacing: 0;
-    border-color: black;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-td{
-    border: 1px solid black;
-}
-
-.table td, .table th {
-    padding: 0;
-}
-
 .btn_click{
     display: block;
-    height: 100px;
+    position: relative;
+    overflow: hidden;
+    background-color: gray;
     width: 100%;
-    outline: none;
-    border: none;
-    background-color:transparent;
+    height: 100px;
     font-size: 60px;
+    border-style: outset;
+    border-color:  rgb(195, 195, 195);
+}
+
+.btn_click:focus {
+    outline: none;
+}
+
+.sectionDark{
+    background-color: #cccccc;
+    padding: 2rem;
+}
+
+.btn-instruction{
+    display: block;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    color: #ffffff;
+}
+ h5.modal-title{
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+.TicTacToe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgCenter{
+    display: block;
+    margin: auto;
+}
+
+.btnCenter{
+    display:block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 270px;
+}
+
+.socialWrapper{
+    margin:auto;
+}
+
+.footer-content{
+    display: inline-block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 4rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: white;
+}
+
+.fa{
+    margin: 10px;
+}
+
+.fa-facebook-square{
+    color: #3b5998;
+}
+
+.fa-google{
+    color: #c32f10;
+}
+
+.fa-instagram{
+    color: #ffffff;
 }
 

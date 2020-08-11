@@ -1,7 +1,7 @@
 var tokenOne = "O";
 var tokenTwo = "X";
 var currentPlayer = tokenOne;
-
+var originalTable = [[".",".","."],[".",".","."],[".",".","."]];
 var table = [[".",".","."],[".",".","."],[".",".","."]];
 
 
@@ -22,9 +22,7 @@ function play(id, x, y){
     }
 }
 
-
 // changing token based on players
-
 function changePlayer() {
     if (currentPlayer === tokenOne) {
         currentPlayer = tokenTwo;
@@ -33,8 +31,7 @@ function changePlayer() {
     } return currentPlayer;
 }
 
-// Update original table
-
+// Update table
 function updateTable(positionX, positionY, Token) {
     
     for (var i = 0 ; i < table.length ; i++) {
@@ -51,11 +48,10 @@ function updateTable(positionX, positionY, Token) {
         }        
         
     }
-    findWinner(table);
+    setTimeout(() => findWinner(table));
 }
     
 // Finding Horizontal Winners
-
 function horizontalWinner(table){
 
     for (var i = 0 ; i < table.length ; i++) {
@@ -84,7 +80,6 @@ function horizontalWinner(table){
 }      
    
 // Finding Vertical Winners
-
 function verticalWinner(table){
     
     for (var i = 0 ; i < table.length ; i++) {
@@ -151,9 +146,22 @@ function findWinner(table){
     var diagonalW = diagonalWinner(table);
 
     if ((horizontalW === "winner X") || (verticalW === "winner X")|| (diagonalW === "winner X")){
-        console.log("winner X");
+        alertWinner('Winner X')
     } else if ((horizontalW === "winner O") || (verticalW === "winner O")|| (diagonalW === "winner O")){
-        console.log("winner O");
+        alertWinner("Winner O")
     }
+}
 
+function restartGame() {
+    $('#resetGameModal').modal('toggle')
+
+    table = originalTable
+    for (var i =0; i< 8; i++) {
+        $(`#btn_${i}`).text("")
+    }
+}
+
+function alertWinner(winnerText) {
+    $('#resetGameModal').modal('toggle')
+    $('#resetGameModal .modal-body').text(winnerText)
 }
