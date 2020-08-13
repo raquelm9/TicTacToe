@@ -31,7 +31,7 @@ function changePlayer() {
     } return currentPlayer;
 }
 
-// Update table
+// Update original table
 function updateTable(positionX, positionY, Token) {
     
     for (var i = 0 ; i < table.length ; i++) {
@@ -114,8 +114,7 @@ function verticalWinner(table){
 
         }
     }       
-}     
-
+} 
 
 // Finding Diagonal Winners
 function diagonalWinner(table){
@@ -140,15 +139,39 @@ function diagonalWinner(table){
         
 }  
 
+// Finding Tie Result
+function findTie(table){
+
+    var count = 0
+
+    for (var i = 0 ; i < table.length ; i++) {
+
+        for (var j = 0; j < table[i].length; j++){
+
+            if (table[i][j] !== "."){
+                count = count + 1;
+            }
+        }
+    } 
+  if (count === 9){
+      return("tie");
+  }
+}
+
+
 function findWinner(table){
     var horizontalW = horizontalWinner(table);
     var verticalW = verticalWinner(table);
     var diagonalW = diagonalWinner(table);
+    var tie = findTie(table);
+ 
 
     if ((horizontalW === "winner X") || (verticalW === "winner X")|| (diagonalW === "winner X")){
-        alertWinner('Winner X')
+        alertWinner("Winner X")
     } else if ((horizontalW === "winner O") || (verticalW === "winner O")|| (diagonalW === "winner O")){
         alertWinner("Winner O")
+    } else if (tie === "tie") {
+        alertWinner("Tie");
     }
 }
 
@@ -156,7 +179,8 @@ function restartGame() {
     $('#resetGameModal').modal('toggle')
 
     table = originalTable
-    for (var i =0; i< 8; i++) {
+
+    for (var i = 0; i < 9; i++) {
         $(`#btn_${i}`).text("")
     }
 }
