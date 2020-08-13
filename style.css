@@ -12,6 +12,9 @@
     background-color:#eceeef;
     padding: 3rem 0;
 }
+.sectionLight .jumbotron {
+    padding:0;
+}
 
 .btn_click{
     display: block;
