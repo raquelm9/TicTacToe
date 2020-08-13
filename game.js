@@ -1,7 +1,6 @@
 var tokenOne = "O";
 var tokenTwo = "X";
 var currentPlayer = tokenOne;
-var originalTable = [[".",".","."],[".",".","."],[".",".","."]];
 var table = [[".",".","."],[".",".","."],[".",".","."]];
 
 
@@ -48,7 +47,8 @@ function updateTable(positionX, positionY, Token) {
         }        
         
     }
-    setTimeout(() => findWinner(table));
+    // console.log(table);
+    findWinner(table);
 }
     
 // Finding Horizontal Winners
@@ -178,14 +178,17 @@ function findWinner(table){
 function restartGame() {
     $('#resetGameModal').modal('toggle')
 
-    table = originalTable
+    table = [[".",".","."],[".",".","."],[".",".","."]];
+    console.log(table);
 
     for (var i = 0; i < 9; i++) {
         $(`#btn_${i}`).text("")
     }
+    
+
 }
 
 function alertWinner(winnerText) {
-    $('#resetGameModal').modal('toggle')
-    $('#resetGameModal .modal-body').text(winnerText)
+    $('#resetGameModal .modal-body').text(winnerText);
+    $('#resetGameModal').modal('toggle');
 }

@@ -61,19 +61,19 @@
       <div class="col-md-6 col-sm-12">
         <div class="container" style="width:100%">
             <div class="row">
-                <button type="button" class="btn_click col-4" id="btn_0" onClick="play('btn_0', 0, 0)"></button>
-                <button type="button" class="btn_click col-4" id="btn_1" onClick="play('btn_1', 0, 1)"></button>
-                <button type="button" class="btn_click col-4" id="btn_2" onClick="play('btn_2', 0, 2)"></button>
+                <button type="button" class="btn_click col-4 btn0" id="btn_0" onClick="play('btn_0', 0, 0)"></button>
+                <button type="button" class="btn_click col-4 btn1" id="btn_1" onClick="play('btn_1', 0, 1)"></button>
+                <button type="button" class="btn_click col-4 btn2" id="btn_2" onClick="play('btn_2', 0, 2)"></button>
             </div>
             <div class="row">
-                <button type="button" class="btn_click col-4" id="btn_3" onClick="play('btn_3', 1, 0)"></button>
-                <button type="button" class="btn_click col-4" id="btn_4" onClick="play('btn_4', 1, 1)"></button>
-                <button type="button" class="btn_click col-4" id="btn_5" onClick="play('btn_5', 1, 2)"></button>
+                <button type="button" class="btn_click col-4 btn3" id="btn_3" onClick="play('btn_3', 1, 0)"></button>
+                <button type="button" class="btn_click col-4 btn4" id="btn_4" onClick="play('btn_4', 1, 1)"></button>
+                <button type="button" class="btn_click col-4 btn5" id="btn_5" onClick="play('btn_5', 1, 2)"></button>
             </div>
             <div class="row">
-                <button type="button" class="btn_click col-4" id="btn_6" onClick="play('btn_6', 2, 0)"></button>
-                <button type="button" class="btn_click col-4" id="btn_7" onClick="play('btn_7', 2, 1)"></button>
-                <button type="button" class="btn_click col-4" id="btn_8" onClick="play('btn_8', 2, 2)"></button>
+                <button type="button" class="btn_click col-4 btn6" id="btn_6" onClick="play('btn_6', 2, 0)"></button>
+                <button type="button" class="btn_click col-4 btn7" id="btn_7" onClick="play('btn_7', 2, 1)"></button>
+                <button type="button" class="btn_click col-4 btn8" id="btn_8" onClick="play('btn_8', 2, 2)"></button>
             </div>
         </div>
       </div>
@@ -117,7 +117,7 @@
               <img class="img-fluid imgCenter" src="assets/img-party.jpg">
               <div class="row">
                 <div class="col-sm-12">
-                  <button type="button" class="btn btn-primary btn-lg btnCenter" data-toggle="modal" data-target=".party-modal-lg">Party Game</button>
+                  <button type="button" class="btn btn-primary btn-lg btnCenter" data-toggle="modal" data-target=".party-modal-lg">Tic Tac Toe + Party</button>
                 </div>
               </div>
             </div>
@@ -125,15 +125,15 @@
               <img class="img-fluid imgCenter" src="assets/img-sport.jpg">
               <div class="row">
                 <div class="col-sm-12">
-                  <button type="button" class="btn btn-primary btn-lg btnCenter" data-toggle="modal" data-target=".sport-modal-lg">Sport Game</button>
+                  <button type="button" class="btn btn-primary btn-lg btnCenter" data-toggle="modal" data-target=".sport-modal-lg">Tic Tac Toe + Sports</button>
                 </div>
               </div>
             </div>
             <div class="col-sm-12 col-lg-4">
-              <img class="img-fluid imgCenter" src="assets/img-win.png">
+              <img class="img-fluid imgCenter" src="assets/img-win.jpg">
               <div class="row">
                 <div class="col-sm-12">
-                  <button type="button" class="btn btn-primary btn-lg btnCenter" data-toggle="modal" data-target=".winner-modal-lg">Always Win!</button>
+                  <button type="button" class="btn btn-primary btn-lg btnCenter" data-toggle="modal" data-target=".winner-modal-lg">Learn How To Win!</button>
                 </div>
               </div>
             </div>
@@ -144,22 +144,24 @@
 
     <!-- Footer -->
     <footer class="footer bg-inverse">
+      <div class="container-fluid containerFooter">
         <div class="row">
-          <div class="col-sm-6 col-lg-3 socialWrapper">
-            <p class="footer-content">Tic Tac Toe</p>
-          </div>
-          <div class="col-sm-6 col-lg-9 socialWrapper">
-            <a href="https://facebook.com" target="blank">
-              <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-            </a>
-            <a href="https://google.com" target="blank">
-              <i class="fa fa-google fa-2x" aria-hidden="true"></i>
-            </a>
-            <a href="https://instagram.com" target="blank">
-              <i class="fa fa-instagram fa-2x" aria-hidden="true""></i>
-            </a>
-          </div> 
+            <div class="col-sm-12 col-lg-3 socialWrapper">
+              <i class="fa fa-angellist fa-4x" aria-hidden="true"></i>
+            </div>
+            <div class="col-sm-12 col-lg-9 socialWrapper">
+              <a href="https://facebook.com" target="blank">
+                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+              </a>
+              <a href="https://google.com" target="blank">
+                <i class="fa fa-google fa-2x" aria-hidden="true"></i>
+              </a>
+              <a href="https://instagram.com" target="blank">
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+              </a>
+            </div> 
         </div>
+      </div>
     </footer>
 
 
@@ -203,8 +205,19 @@
     <div class="modal fade party-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9UGQhz3vPg" allowfullscreen></iframe>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Party with Tic Tac Toe</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9UGQhz3vPg" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -214,8 +227,19 @@
     <div class="modal fade sport-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IRDp5HcZyVA" allowfullscreen></iframe>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Mix Tic Tac Toe with Sports</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IRDp5HcZyVA" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -225,8 +249,19 @@
     <div class="modal fade winner-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OmC07DvEayY" allowfullscreen></iframe>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Learn how to ALWAYS Win!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OmC07DvEayY" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -238,9 +273,6 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">Game Over</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
           </div>
           <div class="modal-body">
           </div>
