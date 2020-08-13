@@ -10,7 +10,7 @@
 
 .sectionLight{
     background-color:#eceeef;
-    padding:3rem;
+    padding: 3rem 0;
 }
 
 .btn_click{
@@ -83,7 +83,7 @@ button.btn8 {
 
 .sectionDark{
     background-color: #cccccc;
-    padding: 5rem;
+    padding: 3rem 0;
 }
 
 .btn-instruction{
@@ -151,3 +151,14 @@ button.btn8 {
     padding-left: 60px;
 }
 
+@media (max-width: 576px) {
+    .sectionLight{
+        padding: 3rem 0 3rem 0
+    }
+    .sectionDark{
+        padding: 3rem;
+    }
+    .img-control{
+        margin-bottom: 50px;
+    }
+}
